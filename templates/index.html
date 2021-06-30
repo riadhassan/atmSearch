@@ -4,14 +4,41 @@
     <meta charset="UTF-8">
     <title>ATM Search</title>
     <style>
-        body, head * {
+        html, body * {
             font-family: sans-serif;
             border: 20px;
+        }
+        .atms{
+            border: 20px;
+        }
+        .atm{
+            background-color: burlywood;
+            padding: 10px;
+            margin: 10px;
+        }
+        .location-input * {
+            font-size: 16px;
         }
     </style>
 </head>
 <body>
     <h1>ATM Search</h1>
+    <div class="location-input">
+        <form action="" method="get" class="input-form">
+            <input type="text" name="location" id="location" placeholder="Location....">
+            <input type="submit">
+        </form>
+    </div>
+    <div class="atms">
+        {% for atm in atm_lists %}
+        <div class="atm">
+            <h4>{{ atm.booth }}</h4>
+            <h5>{{ atm.address }}</h5>
+            <p>{{ atm.location }}</p>
+        </div>
+        {% endfor %}
+    </div>
+
     <h2>{{ message }}</h2>
 </body>
 </html>
