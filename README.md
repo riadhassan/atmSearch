@@ -9,4 +9,4 @@ It is the simplest Django project for learning by just taking query parameter an
 1. Run `git clone https://github.com/riadhassan/atmSearch.git`
 2. Run `pip install -r requirements.txt` to install dependencies
 3. Run `python manage.py runserver`
-4. Navigate to http:http://127.0.0.1:8000/ in your browser
+4. Navigate to http://127.0.0.1:8000/ in your browser
